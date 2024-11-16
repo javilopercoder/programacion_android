@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">practica1</string>
+    <string name="i_have_no_idea">I have no idea</string>
+    <string name="what_i_m_doing">What I\'m doing</string>
+    <string name="button">Button</string>
+</resources>
