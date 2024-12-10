@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Etiqueta para el primer número -->
+    <TextView
+        android:id="@+id/textViewNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce un número:"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true" />
+
+    <!-- Campo de entrada para el primer número -->
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNumber1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Etiqueta para el segundo número -->
+    <TextView
+        android:id="@+id/textViewNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce un segundo número:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo de entrada para el segundo número -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textViewNumber2"
+        android:layout_marginTop="8dp" />
+
+    <!-- Selección de operaciones -->
+    <TextView
+        android:id="@+id/textViewOperations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una operación:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón de Calcular -->
+
+    <!-- Resultado -->
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOperations"
+        android:layout_marginTop="9dp">
+
+        <!-- Radio buttons para las operaciones -->
+        <RadioButton
+            android:id="@+id/radioButtonSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupOperations"
+        android:layout_marginTop="71dp"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El resultado es:"
+        android:textSize="18sp"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
